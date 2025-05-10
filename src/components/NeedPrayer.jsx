@@ -1,6 +1,6 @@
 import React from "react";
-import NeedPrayerImage from "../src/assets/hands.jpg";
-import CrossImage from "../src/assets/cross.png";
+import NeedPrayerImage from "../assets/hands.jpg";
+import CrossImage from "../assets/cross.png";
 
 function NeedPrayer() {
   return (

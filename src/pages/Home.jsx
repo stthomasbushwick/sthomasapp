@@ -1,5 +1,8 @@
 import { FlipWords } from "../components/FlipWords";
 import { Link } from "react-router-dom";
+import { Parallax, useParallax, ParallaxBanner } from "react-scroll-parallax";
+import church from "../assets/church.jpg"
+import handsup from "../assets/handsup.jpg"
 const Home = () => {
     const words = ["God", "us", "others"];
     const verses = {
@@ -13,7 +16,11 @@ const Home = () => {
         "Psalm 23:1": "The Lord is my shepherd; I shall not want.",
         "Matthew 11:28": "Come to Me, all you who labor and are heavy laden, and I will give you rest.",
         "Romans 15:13": "Now may the God of hope fill you with all joy and peace in believing, that you may abound in hope by the power of the Holy Spirit."
-      };
+    };
+
+    const whyParallaxImg = useParallax({ y: [-10, 10], speed: 10 });
+    const whyParallaxText = useParallax({ y: [-15, 15], speed: 15 });
+
       
     const RandomVerse = () => {
         const keys = Object.keys(verses);
@@ -29,32 +36,57 @@ const Home = () => {
 
     return (
         <>
-            <div id="home-title-section">
-                <h1>ST. THOMAS EPISCOPAL CHURCH</h1>
-                <p>You matter to <FlipWords words={words} duration={1500}/></p>
-            </div>
+            <ParallaxBanner
+            layers={[
+                {
+                    image: church,
+                    speed: -15,
+                },
+            ]}
+            style={{ height: `calc(100vh - 64px)` }}
+            >
+                <Parallax speed={8}>
+                    <div id="home-title-section">
+                        <h1>ST. THOMAS EPISCOPAL CHURCH</h1>
+                        <p>You matter to <FlipWords words={words} duration={1500} /></p>
+                    </div>
+                </Parallax>
+            </ParallaxBanner>
+        
             <div id="home-why-section">
-                <div id="home-why-sec-div-1">
+                <div id="home-why-sec-div-1" ref={whyParallaxImg.ref}>
                     <img src="https://stthomasbushwick.org/uploads/2023/08/DSC07556.jpg"></img>
                 </div>
-                <div id="home-why-sec-div-2">
+                <div id="home-why-sec-div-2" ref={whyParallaxText.ref}>
                     <h1>Why Our Church?</h1>
                     <p>St. Thomas Episcopal Church is a Christian community called to communicate God’s love to people from all walks of life.  We are committed to being a sign to our city of God’s work, justice, peace, and love. We are a Parish family unified in giving thanks and praise to the Lord for his blessings. We celebrate through prayer, bible study, education, music, and food.</p>
                 </div>
             </div>
-            <div id="home-prayer-section">
-                <h1>Need Prayer?</h1>
-                <p>No matter what you’re facing, we’d love to pray with you!</p>
-                <Link to="/prayer">
-                    <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200">
-                        Slide
-                    </button>
-                </Link>
-            </div>
-            <div id="home-verse-section">
+            <ParallaxBanner
+            layers={[
+                {
+                    image: handsup,
+                    speed: -15,
+                },
+            ]}
+            style={{ height: `calc(100vh - 100px)` }}
+            >
+                <Parallax speed={5} >
+                    <div id="home-prayer-section">
+                        <h1>Need Prayer?</h1>
+                        <p>No matter what you’re facing, we’d love to pray with you!</p>
+                        <Link to="/prayer">
+                            <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200">
+                                Slide
+                            </button>
+                        </Link>
+                    </div>
+                </Parallax>
+            </ParallaxBanner>
+            <Parallax id="home-verse-section" speed={15}>
                 <h1 id="verse-title">A Glimpse Of Scripture</h1>
                 <RandomVerse />
-            </div>
+            </Parallax>
         </>
     )
 }

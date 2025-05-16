@@ -10,11 +10,11 @@ function NeedPrayer() {
         className="relative bg-cover bg-center h-screen overflow-hidden"
         style={{ backgroundImage: `url(${NeedPrayerImage})` }}>
         <Spotlight />
-        <div className="text-center relative z-10">
+        <div className="text-center">
           <div className="text-white text-6xl mb-8 pt-20 pb-14">
             Join Us for Daily Noon Prayer
           </div>
-          <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200 my-8 ">
+          <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200 my-8">
             Zoom Link
           </button>
           <div className="text-white text-3xl pt-18 mx-5">
@@ -25,7 +25,7 @@ function NeedPrayer() {
 
       <div className="bg-gray-100 py-16 px-6 flex flex-col-reverse lg:flex-row items-center justify-center ">
         <div className="flex-1 w-full flex justify-center">
-          <img src={CrossImage} alt="Cross" />
+          <img className="w-3/4" src={CrossImage} alt="Cross" />
         </div>
 
         <div className="flex-1 w-full text-center lg:text-left px-4">
@@ -49,12 +49,12 @@ function NeedPrayer() {
           <p className="text-lg md:text-3xl leading-relaxed text-gray-300 mb-8 max-w-xl lg:text-center mx-auto">
             Browse sermons, spiritual reflections, and special services anytime
           </p>
-          <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200 my-8 ">
+          <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200 my-8">
             Watch Worship
           </button>
         </div>
 
-        <div className="flex-1 w-full max-w-3xl aspect-[16/9] mx-7">
+        <div className="flex-1 w-full max-w-6xl aspect-[16/9] mx-7">
           <iframe
             src="https://www.youtube.com/embed/yyX9PJx6CzE?si=DSQLaFgHPoxZAGb0"
             title="YouTube video player"

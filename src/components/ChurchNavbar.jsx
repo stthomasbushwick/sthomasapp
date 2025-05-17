@@ -15,12 +15,16 @@ import {
 const ChurchNavbar = () => {
     const navItems = [
         {
+          name: "Home",
+          link: "/",
+        },
+        {
           name: "Prayer",
           link: "/prayer",
         },
         {
           name: "Members",
-          link: "#pricing",
+          link: "/members",
         },
         {
           name: "Readings",

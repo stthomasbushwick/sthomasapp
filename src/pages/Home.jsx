@@ -85,7 +85,7 @@ const Home = () => {
                         <h1>Need Prayer?</h1>
                         <p>No matter what you’re facing, we’d love to pray with you!</p>
                         <Link to="/prayer">
-                            <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200">
+                            <button className="px-4 py-2 rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200 cursor-pointer">
                             Pray With Us
                             </button>
                         </Link>

@@ -153,6 +153,66 @@ footer{
     font-size: 19px;
 }
 
+#reading-sec-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: #021A24;
+    color: white;
+}
+
+#reading-sec-1-div-2{
+    display: flex;
+    align-items: center;
+}
+
+#reading-sec-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+#reading-sec-2-div-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#reading-sec-1 img, #reading-sec-2 img{
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    aspect-ratio: 3 / 2.3;
+    object-fit: cover;
+}
+
+#reading-sec-1 button, #reading-sec-2 button{
+    padding: 10px 25px;
+    cursor:pointer;
+}
+
+.readings-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.readings-text p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.readings-text h1{
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1100px) {
     #home-why-section{
         display: none;
@@ -182,9 +242,37 @@ footer{
         font-size: 30px;
         padding: 50px 20px;
     }
+    .readings-text h1{
+        line-height: 40px;
+        font-size: 30px;
+    }
+    #reading-sec-1 img, #reading-sec-2 img{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 800px){
+
+    #reading-sec-1, #reading-sec-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .readings-text{
+        padding: 10px;
+    }
+
+    .readings-text h1{
+        line-height: 45px;
+    }
+    
+    #reading-sec-1 img, #reading-sec-2 img{
+        display: none;
+    }
+
     footer{
         height: 400px;
     }

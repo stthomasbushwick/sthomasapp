@@ -24,7 +24,7 @@ const ChurchNavbar = () => {
         },
         {
           name: "Readings",
-          link: "#contact",
+          link: "/readings",
         },
         {
           name: "Events",

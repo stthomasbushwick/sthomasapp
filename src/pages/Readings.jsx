@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const Readings = () => {
     const [thisSunday, setThisSunday] = useState(null);
     const [nextSunday, setNextSunday] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const sec1ImgParallax = useParallax({ y: [-18, 18], speed: 18 });
     const sec1TextParallax = useParallax({  y: [-18, 18], speed: 18  });
@@ -14,15 +15,18 @@ const Readings = () => {
 
     useEffect(() => {
         const doFetch = async () => {
+            setLoading(true);
             //I'm fetching the readings for the upcoming Sunday
             const response1 = await fetch("https://lectserve.com/sunday?lect=rcl");
             const data1 = await response1.json();
+            // console.log(data1)
             setThisSunday(data1);
             //I'm getting the data of the next sunday from the first fetch and using that to fetch the second sundays reading
             const response2 = await fetch(`https://lectserve.com/date/${data1.nextSunday}?lect=rcl`);
             const data2 = await response2.json();
             setNextSunday(data2.red_letter);
             console.log(data2);
+            setLoading(false)
         }
         doFetch();
     }, []);
@@ -34,16 +38,18 @@ const Readings = () => {
     }
 
     const formatDate = (inputDate) => {
-        const date = new Date(inputDate); // Parses the input string
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        return date.toLocaleDateString('en-US', options);
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        const [year, month, day] = inputDate.split("-");
+        return `${months[month - 1]} ${Number(day)}, ${year}`
     }    
 
     return (
         <>
             <div id="reading-sec-1">
                 <div className="readings-text">
-                    <div ref={sec1TextParallax.ref}>
+                <div ref={sec1TextParallax.ref}>
+                    {loading? <div className="loader dark-loader"></div>:
+                    <>
                         <p>This Sunday</p>
                         {thisSunday && thisSunday.services[0].readings.map(verse => <h1>{verse}</h1>)}
                         <p>{formatDate(thisSunday?.date)}</p>
@@ -53,6 +59,7 @@ const Readings = () => {
                             Readings
                             </button>
                         </a>
+                        </>}
                     </div>
                 </div>
                 <div id="reading-sec-1-div-2" ref={sec1ImgParallax.ref}>
@@ -64,7 +71,7 @@ const Readings = () => {
                     <img src={readingsDark}></img>
                 </div>
                 <div className="readings-text" ref={sec2TextParallax.ref}>
-                    <div>
+                    {loading? <div className="loader"></div>: <div>
                         <p>Next Sunday</p>
                         {nextSunday && nextSunday.services[0].readings.map(verse => <h1>{verse}</h1>)}
                         <p>{formatDate(nextSunday?.date)}</p>
@@ -74,7 +81,7 @@ const Readings = () => {
                                 Readings
                             </button>
                         </a>
-                    </div>
+                    </div>}
                 </div>
             </div>
         </>

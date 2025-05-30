@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { cn } from "../../lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
@@ -11,11 +11,7 @@ import {
 
 import React, { useRef, useState } from "react";
 
-
-export const Navbar = ({
-  children,
-  className
-}) => {
+export const Navbar = ({ children, className }) => {
   const ref = useRef(null);
   const { scrollY } = useScroll({
     target: ref,
@@ -39,16 +35,13 @@ export const Navbar = ({
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(child, { visible })
-          : child)}
+          : child
+      )}
     </motion.div>
   );
 };
 
-export const NavBody = ({
-  children,
-  className,
-  visible
-}) => {
+export const NavBody = ({ children, className, visible }) => {
   return (
     <motion.div
       animate={{
@@ -77,11 +70,7 @@ export const NavBody = ({
   );
 };
 
-export const NavItems = ({
-  items,
-  className,
-  onItemClick
-}) => {
+export const NavItems = ({ items, className, onItemClick }) => {
   const [hovered, setHovered] = useState(null);
 
   return (
@@ -101,7 +90,8 @@ export const NavItems = ({
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800" />
+              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+            />
           )}
           <span className="relative z-20">{item.name}</span>
         </Link>
@@ -110,11 +100,7 @@ export const NavItems = ({
   );
 };
 
-export const MobileNav = ({
-  children,
-  className,
-  visible
-}) => {
+export const MobileNav = ({ children, className, visible }) => {
   return (
     <motion.div
       animate={{
@@ -143,24 +129,19 @@ export const MobileNav = ({
   );
 };
 
-export const MobileNavHeader = ({
-  children,
-  className
-}) => {
+export const MobileNavHeader = ({ children, className }) => {
   return (
     <div
-      className={cn("flex w-full flex-row items-center justify-between", className)}>
+      className={cn(
+        "flex w-full flex-row items-center justify-between",
+        className
+      )}>
       {children}
     </div>
   );
 };
 
-export const MobileNavMenu = ({
-  children,
-  className,
-  isOpen,
-  onClose
-}) => {
+export const MobileNavMenu = ({ children, className, isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -179,10 +160,7 @@ export const MobileNavMenu = ({
   );
 };
 
-export const MobileNavToggle = ({
-  isOpen,
-  onClick
-}) => {
+export const MobileNavToggle = ({ isOpen, onClick }) => {
   return isOpen ? (
     <IconX className="text-black dark:text-white" onClick={onClick} />
   ) : (
@@ -190,16 +168,16 @@ export const MobileNavToggle = ({
   );
 };
 
-export const NavbarLogo = ({logo = "https://assets.aceternity.com/logo-dark.png", width = 30, height = 30}) => {
+export const NavbarLogo = ({
+  logo = "https://assets.aceternity.com/logo-dark.png",
+  width = 30,
+  height = 30,
+}) => {
   return (
     <Link
       to="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
-      <img
-        src = {logo}
-        alt="logo"
-        width={width}
-        height={height} />
+      <img src={logo} alt="logo" width={width} height={height} />
       {/* <span className="font-medium text-black dark:text-white">Startup</span> */}
     </Link>
   );

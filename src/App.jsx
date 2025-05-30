@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/ChurchNavbar";
 import Readings from "./pages/Readings";
 import Members from "./pages/Members";
+import  Events  from "./pages/Events";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

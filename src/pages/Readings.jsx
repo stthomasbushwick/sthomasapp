@@ -3,6 +3,7 @@ import readingsDark from "../assets/readingsDark.jpg"
 import readingsLight from "../assets/readingsLight.jpeg"
 import {useParallax } from "react-scroll-parallax";
 import { useEffect } from "react";
+
 const Readings = () => {
     const [thisSunday, setThisSunday] = useState(null);
     const [nextSunday, setNextSunday] = useState(null);

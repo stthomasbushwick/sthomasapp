@@ -120,7 +120,7 @@ const CarouselControl = ({ type, title, handleClick }) => {
   );
 };
 
-export function Carousel({ slides }) {
+export function Carousel({ slides, onSlideClick }) {
   const [current, setCurrent] = useState(0);
 
   const handlePreviousClick = () => {
@@ -136,6 +136,8 @@ export function Carousel({ slides }) {
   const handleSlideClick = (index) => {
     if (current !== index) {
       setCurrent(index);
+    } else if (onSlideClick) {
+      onSlideClick(slides[index]);
     }
   };
 

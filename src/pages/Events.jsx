@@ -8,6 +8,7 @@ const slides = [
     // button: "Learn More",
     description:
       "A warm and festive celebration filled with laughter, music, and the spirit of giving. Families gathered to share joy, exchange gifts, and reflect on the true meaning of Christmas together.",
+    url: "https://galleries.pixieset.com/collections/93951289/sets/133933597",
   },
   {
     src: "src/assets/Mothersday24.jpg",
@@ -15,6 +16,7 @@ const slides = [
     // button: "Sign Up",
     description:
       "A heartfelt afternoon honoring the strength, grace, and love of all mothers. Guests enjoyed delicious food, warm fellowship, and uplifting tributes that made the day truly unforgettable.",
+    url: "https://galleries.pixieset.com/collections/93950194/sets/133931916",
   },
   {
     src: "src/assets/Dinner2.jpg",
@@ -22,21 +24,29 @@ const slides = [
     // button: "RSVP Now",
     description:
       "An evening of gratitude and celebration dedicated to Father Sully’s unwavering service and spiritual leadership. The community came together to honor his impact with heartfelt words, joyful memories, and a shared meal filled with love.",
+    url: "https://galleries.pixieset.com/collections/93950570/sets/133932483",
   },
 ];
 
 const Events = () => {
+  const handleClick = (slide) => {
+    if (slide.url) {
+      window.open(slide.url, "_blank");
+    }
+  };
+
   return (
     <>
       <h1 className="text-4xl text-center font-bold mt-6">
         Church Held Events
       </h1>
-      <Carousel slides={slides} />
-
-      <h1 className="text-4xl text-center font-bold bg-[#031E29] text-white pt-4">
+      <div className="overflow-hidden">
+        <Carousel slides={slides} onSlideClick={handleClick} />
+      </div>
+      <h1 className="text-4xl text-center font-bold bg-[#031E29] text-white pt-6 mt-5">
         Upcoming Events
       </h1>
-      <div className="bg-[#031E29] text-white py-20 px-6 flex flex-col lg:flex-row items-center justify-center">
+      <div className="bg-[#031E29] text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center">
         <div className="flex-1 w-full text-center lg:text-center">
           <h1 className="text-2xl md:text-5xl font-semibold mb-6">
             Mother’s Day Luncheon 2025
@@ -50,7 +60,11 @@ const Events = () => {
         </div>
 
         <div className="flex-1 w-full flex justify-center">
-          <img className="w-2/4 rounded-4xl" src={mothersday23} alt="Cross" />
+          <img
+            className="w-2/4 rounded-4xl aspect-9/12"
+            src={mothersday23}
+            alt="mothersday"
+          />
         </div>
       </div>
     </>

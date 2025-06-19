@@ -77,7 +77,7 @@ const Members = () => {
                 <h1>Members Of Our Church</h1>
                 <MembersDropDown selected={selected} setSelected={setSelected} people={people}/>
             </div>
-            <MemberSections members={selected.info}/>
+            <MemberSections members={selected.info}/> 
             <MobileMemberSections members={selected.info}/>
         </div>
     )

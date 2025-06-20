@@ -21,18 +21,18 @@ function NeedPrayer() {
         // style={{ backgroundImage: `url(${NeedPrayerImage})` }}
         >
         <Spotlight />
-        <div className="text-center relative z-3">
-          <div className="text-white text-6xl mb-8 pt-20 pb-14">
+        <div className="relative z-3" id="prayer-content">
+          <h1>
             Join Us for Daily Noon Prayer
-          </div>
+          </h1>
+          <p>
+            Monday through Friday at 12:00 PM EST
+          </p>
           <a href="https://meetings.ringcentral.com/j/8690229651" target="_blank">
             <button className="px-4 py-2 cursor-pointer rounded-xl border border-neutral-600 text-black bg-white hover:bg-gray-100 transition duration-200 my-8">
               Zoom Link
             </button>
           </a>
-          <div className="text-white text-3xl pt-18 mx-5">
-            Monday through Friday at 12:00 PM EST
-          </div>
         </div>
       </ParallaxBanner>
 

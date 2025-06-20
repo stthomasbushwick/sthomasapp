@@ -6,6 +6,31 @@ body{
     background-color: #f1f1f1;
 }
 
+#not-found-div {
+    height: calc(100vh - 64px); /* Assuming navbar is 64px tall */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#not-found-div h1 {
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+#not-found-div p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #7d7d7d;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+
 .icon-hr{
     width:80%;
     margin: 70px auto 10px auto;

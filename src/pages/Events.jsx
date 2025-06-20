@@ -33,7 +33,7 @@ const slides = [
     // button: "Sign Up",
     description:
       "A beautiful gathering filled with heartfelt moments, meaningful connections, and genuine appreciation for every mother in attendance. The event featured flavorful dishes, joyful conversations, and touching expressions of love that left a lasting impression.",
-    url: "https://stthomas.pixieset.com/mothersday2023/",
+    url: "https://stthomas.pixieset.com/mothersdayluncheon2023/",
   },
 ];
 
@@ -46,14 +46,14 @@ const Events = () => {
 
   return (
     <>
-      <h1 className="text-4xl text-center font-bold mt-6">
+      <h1 className="text-3xl text-center font-bold mt-6">
         Church Held Events
       </h1>
       <div className="overflow-hidden">
         <Carousel slides={slides} onSlideClick={handleClick} />
       </div>
       <div className="bg-[#031E29]">
-        <h1 className="text-4xl text-center font-bold text-white pt-15 mt-5">
+        <h1 className="text-3xl text-center font-bold text-white pt-15 mt-5">
           Upcoming Events
         </h1>
         <div className="text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center">

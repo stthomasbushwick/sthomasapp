@@ -53,12 +53,15 @@ const Events = () => {
         <Carousel slides={slides} onSlideClick={handleClick} />
       </div>
       <div className="bg-[#031E29]">
-        <h1 className="text-3xl text-center font-bold text-white pt-15 mt-5">
+        {/* <h1 className="text-3xl text-center font-bold text-white pt-15 mt-5">
           Upcoming Events
-        </h1>
+        </h1> */}
         <div className="text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center">
           <div className="flex-1 w-full text-center lg:text-center">
-            <h1 className="text-2xl md:text-5xl font-semibold mb-6">
+            <h1 className="text-xl text-center font-medium text-white font-light mb-6">
+              Upcoming:
+            </h1>
+            <h1 className="text-3xl md:text-4xl font-extrabold mb-10">
               Mother’s Day Luncheon 2025
             </h1>
             <p className="text-lg md:text-2xl leading-relaxed text-gray-300 mb-8 max-w-xl lg:text-center mx-auto">

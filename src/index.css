@@ -128,6 +128,10 @@ body{
     font-size: 20px;
 }
 
+.carousel-hover{
+    cursor: pointer;
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -179,6 +183,13 @@ footer{
 }
 
 #reading-sec-1 img, #reading-sec-2 img, .memberImgDiv img, .mobileMemberSection img{
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    aspect-ratio: 3 / 2.3;
+    object-fit: cover;
+}
+.event-img {
     width: 80%;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

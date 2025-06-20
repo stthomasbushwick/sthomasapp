@@ -10,7 +10,7 @@ const Members = () => {
             info: [
                 {
                     name: "Pastor Pablo",
-                    img: "https://variety.com/wp-content/uploads/2024/06/5N7A0541-e1718042484447.jpg",
+                    img: "https://www.bethesdaheadshots.com/wp-content/uploads/2024/04/Jonathan-Kuteyi-wells-fargo-800x800-1.jpg",
                     text: "As the pastor, I am honored to guide this congregation with compassion and vision. My mission is to nurture spiritual growth and foster a welcoming, inclusive community grounded in faith and service."
                 }
             ]
@@ -21,17 +21,17 @@ const Members = () => {
             info: [
                 {
                     name: "Vestry Member Anna",
-                    img: "https://i.pinimg.com/236x/44/8f/55/448f55c72f4d316bb2221e8975e61c9c.jpg",
+                    img: "https://media.istockphoto.com/id/1587604256/photo/portrait-lawyer-and-black-woman-with-tablet-smile-and-happy-in-office-workplace-african.jpg?s=612x612&w=0&k=20&c=n9yulMNKdIYIQC-Qns8agFj6GBDbiKyPRruaUTh4MKs=",
                     text: "As a member of the vestry, I help support the church’s mission by overseeing operations and making decisions that affect our congregation’s future. Working together, we strive to be responsible stewards of our resources."
                 },
                 {
                     name: "Vestry Member Marie",
-                    img: "https://media.istockphoto.com/id/1483329842/photo/studio-portrait-of-attractive-woman-wearing-shirt-and-laughing-while-sitting-at-isolated-grey.jpg?s=612x612&w=0&k=20&c=N4Puu0y0FaYrUMcaANbSs8SRF8IbTvsh-sr10fiCyqM=",
+                    img: "https://www.denverheadshotco.com/wp-content/uploads/2023/06/Company-Headshots-scaled.jpg",
                     text: "Serving on the vestry allows me to contribute meaningfully to the life of our church. I focus on community outreach and ensuring our ministries have the support they need to thrive."
                 },
                 {
                     name: "Vestry Member Thomas",
-                    img: "https://i.pinimg.com/236x/44/8f/55/448f55c72f4d316bb2221e8975e61c9c.jpg",
+                    img: "https://portraitpal.ai/wp-content/uploads/2024/08/corporate-headshot.jpg",
                     text: "Being part of the vestry has deepened my faith and strengthened my relationships within the church. I’m committed to transparent leadership and inclusive growth."
                 }
             ]
@@ -42,12 +42,12 @@ const Members = () => {
             info: [
                 {
                     name: "Committee Lead Clara",
-                    img: "https://static.wikia.nocookie.net/heroes-and-villain/images/3/3d/Luz_Noceda-Profile-With_Scar.png/revision/latest?cb=20230707042239",
+                    img: "https://t4.ftcdn.net/jpg/04/43/25/95/360_F_443259545_PsPbDmm8HY7JLQU9Ew9DPOdAHtIhMtnD.jpg",
                     text: "Our committees are the heartbeat of our church’s operations. From hospitality to finance, each group plays a vital role in ensuring we function smoothly and faithfully serve our members."
                 },
                 {
                     name: "Committee Member Ron",
-                    img: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/06/pjimage-2021-06-21T151451.576.jpg",
+                    img: "https://images.squarespace-cdn.com/content/54c6eb0ce4b0f6cdd67c1196/98324561-dd8c-48f2-8c24-3b620abb0cc0/San_Diego_Professional_Headshots_Professional+_Session_0013.jpg?content-type=image%2Fjpeg",
                     text: "Joining a committee is a great way to get involved and make a difference. We welcome everyone to bring their talents and ideas to support our shared mission."
                 }
             ]
@@ -58,12 +58,12 @@ const Members = () => {
             info: [
                 {
                     name: "Youth Director Jessie",
-                    img: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/08/adventure-time-jermaine2.jpg",
+                    img: "https://danielmottaphotography.com/blog/wp-content/uploads/2022/12/Olivia-Viccaro-Headshot-Master-scaled.jpg",
                     text: "Our Children and Youth Ministry creates a safe and engaging space for young people to learn about faith, build friendships, and grow spiritually through fun activities and meaningful lessons."
                 },
                 {
                     name: "Sunday School Leader Tara",
-                    img: "https://static.wikia.nocookie.net/heroes-and-villain/images/3/3d/Luz_Noceda-Profile-With_Scar.png/revision/latest?cb=20230707042239",
+                    img: "https://images.squarespace-cdn.com/content/v1/54c6eb0ce4b0f6cdd67c1196/1743545008261-OBXL69GKOQLXMVJ722DI/DCP_0085_%282%29.jpg",
                     text: "From Sunday school to teen retreats, we offer programs designed to inspire the next generation and help them develop a strong foundation in their beliefs."
                 }
             ]

@@ -9,9 +9,9 @@ const Members = () => {
             name: 'Pastor',
             info: [
                 {
-                    name: "Pastor Pablo",
-                    img: "https://www.bethesdaheadshots.com/wp-content/uploads/2024/04/Jonathan-Kuteyi-wells-fargo-800x800-1.jpg",
-                    text: "As the pastor, I am honored to guide this congregation with compassion and vision. My mission is to nurture spiritual growth and foster a welcoming, inclusive community grounded in faith and service."
+                    name: "The Reverend Canon Ryan A. Boyce",
+                    img: "https://stthomasbushwick.org/uploads/2024/08/DBD7B922-59D1-455D-B846-ADB8880DF777-2048x1365.jpg",
+                    text: "Recipient of the 2023 Consul General’s Award for Religion and Community Outreach, Reverend Canon Ryan A. Boyce is a Barbados-born priest and community leader with a strong background in law, theology, and youth advocacy. With service spanning Barbados, the Caribbean, and the United States, he has held pastoral and chaplaincy roles in churches, police departments, and juvenile justice systems. He currently serves as a clergy liaison for the NYPD’s 103rd Precinct and is deeply committed to youth development and community outreach."
                 }
             ]
         },

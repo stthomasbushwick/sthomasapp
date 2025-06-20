@@ -8,12 +8,13 @@ body{
 
 .icon-hr{
     width:80%;
-    margin: auto;
+    margin: 70px auto 10px auto;
+    color: #b5b5b5;
 }
 
 #home-icon-sec{
     background-color: #f1f1f1;
-    height: 350px;
+    height: 315px;
     width: 100%;
 }
 
@@ -33,17 +34,18 @@ body{
 }
 
 #home-icon-div svg{
-    height: 60px;
+    height: 55px;
 }
 
 #home-icon-div h1{
     font-weight: bolder;
-    font-size: 30px;
-    margin: 13px 0;
+    font-size: 25px;
+    margin: 15px 0;
 }
 
 #home-icon-div p{
     font-size: 20px;
+    font-weight: lighter;
 }
 
 #home-icon-div a{
@@ -83,7 +85,9 @@ body{
 
 #home-why-section{
     background-color: #f1f1f1;
-    min-height: calc(100vh - 100px);
+    /* min-height: calc(100vh - 100px); */
+    min-height: fit-content;
+    padding: 50px 0 100px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -457,9 +461,6 @@ footer{
     .memberTextDiv{
         padding: 10px;
     }
-}
-
-@media screen and (max-width: 1100px){
     #prayer-div h1{
         font-size: 36px;
     }
@@ -498,7 +499,7 @@ footer{
     }
     
     #home-icon-div div{
-        padding: 20px;
+        padding: 20px 50px;
     }
     
     /* #home-icon-div svg{

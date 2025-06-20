@@ -52,7 +52,7 @@ const Events = () => {
       <div className="overflow-hidden">
         <Carousel slides={slides} onSlideClick={handleClick} />
       </div>
-      <div className="bg-[#031E29]">
+      <div className="bg-[#031E29] mt-3">
         {/* <h1 className="text-3xl text-center font-bold text-white pt-15 mt-5">
           Upcoming Events
         </h1> */}

@@ -1,10 +1,14 @@
 import { Carousel } from "../components/Carousel";
 import mothersday23 from "../assets/mothersday23.jpg";
+import mothersday24 from "../assets/Mothersday24.jpg";
 import mothersday2025 from "../assets/mothersday2025.jpeg";
+import christmasholiday from "../assets/christmasholiday.jpg"
+import Dinner2 from "../assets/Dinner2.jpg"
+
 
 const slides = [
   {
-    src: "src/assets/Mothersday24.jpg",
+    src: mothersday24,
     title: "Mother's Day Luncheon 2024",
     // button: "Sign Up",
     description:
@@ -12,7 +16,7 @@ const slides = [
     url: "https://stthomas.pixieset.com/mothersday2024/",
   },
   {
-    src: "src/assets/christmasholiday.jpg",
+    src: christmasholiday,
     title: "2023 Christmas Holiday",
     // button: "Learn More",
     description:
@@ -20,7 +24,7 @@ const slides = [
     url: "https://stthomas.pixieset.com/2023christmasholiday/",
   },
   {
-    src: "src/assets/Dinner2.jpg",
+    src: Dinner2,
     title: "Father Sully Appreciation Dinner",
     // button: "RSVP Now",
     description:
@@ -28,7 +32,7 @@ const slides = [
     url: "https://stthomas.pixieset.com/fathersullydinner/",
   },
   {
-    src: "src/assets/Mothersday23.jpg",
+    src: mothersday23,
     title: "Mother's Day Luncheon 2023",
     // button: "Sign Up",
     description:

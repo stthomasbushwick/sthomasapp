@@ -13,7 +13,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <div id="nav-div">
+        <Navbar />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/prayer" element={<NeedPrayer />} />

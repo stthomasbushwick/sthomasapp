@@ -32,7 +32,7 @@ const Readings = () => {
                         <p>{formatDate(readings["thisSunday"].date)}</p>
                         <p>{readings["thisSunday"].name}</p>
                         <a href={readingsLink(readings["thisSunday"].date)} target="_blank">
-                            <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#f1f1f1] hover:text-black dark:text-neutral-200 transition duration-200">
+                            <button className="shadow-[inset_0_0_0_2px_#616467] text-white px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#f1f1f1] hover:text-black dark:text-neutral-200 transition duration-200">
                             Readings
                             </button>
                         </a>

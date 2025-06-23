@@ -6,6 +6,10 @@ body{
     background-color: #f1f1f1;
 }
 
+#nav-div a{
+    color:white;
+}
+
 #not-found-div {
     height: calc(100vh - 64px); /* Assuming navbar is 64px tall */
     display: flex;

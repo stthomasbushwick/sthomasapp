@@ -4,17 +4,17 @@ import MobileMemberSections from "../components/MobileMemberSections";
 import { useState } from "react";
 const Members = () => {
     const people = [
-        {
-            id: 0,
-            name: 'Pastor',
-            info: [
-                {
-                    name: "The Reverend Canon Ryan A. Boyce",
-                    img: "https://stthomasbushwick.org/uploads/2024/08/DBD7B922-59D1-455D-B846-ADB8880DF777-2048x1365.jpg",
-                    text: "Recipient of the 2023 Consul General’s Award for Religion and Community Outreach, Reverend Canon Ryan A. Boyce is a Barbados-born priest and community leader with a strong background in law, theology, and youth advocacy. With service spanning Barbados, the Caribbean, and the United States, he has held pastoral and chaplaincy roles in churches, police departments, and juvenile justice systems. He currently serves as a clergy liaison for the NYPD’s 103rd Precinct and is deeply committed to youth development and community outreach."
-                }
-            ]
-        },
+        // {
+        //     id: 0,
+        //     name: 'Pastor',
+        //     info: [
+        //         {
+        //             name: "The Reverend Canon Ryan A. Boyce",
+        //             img: "https://stthomasbushwick.org/uploads/2024/08/DBD7B922-59D1-455D-B846-ADB8880DF777-2048x1365.jpg",
+        //             text: "Recipient of the 2023 Consul General’s Award for Religion and Community Outreach, Reverend Canon Ryan A. Boyce is a Barbados-born priest and community leader with a strong background in law, theology, and youth advocacy. With service spanning Barbados, the Caribbean, and the United States, he has held pastoral and chaplaincy roles in churches, police departments, and juvenile justice systems. He currently serves as a clergy liaison for the NYPD’s 103rd Precinct and is deeply committed to youth development and community outreach."
+        //         }
+        //     ]
+        // },
         {
             id: 1,
             name: 'Vestry',

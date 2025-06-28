@@ -23,8 +23,8 @@ const ChurchNavbar = () => {
       link: "/prayer",
     },
     {
-      name: "Members",
-      link: "/members",
+      name: "Organizations",
+      link: "/organizations",
     },
     {
       name: "Readings",
